@@ -33,7 +33,7 @@ longfellow = new character(
 function checkStartingTrait(trait, num){
     let radios = document.getElementsByName(trait);
     
-    for(let i = 0; i < radios.length; i++){
+    for(let i = 1; i < radios.length; i++){
         if(radios[i].value == num){
             radios[i].checked = true;
             break;
@@ -47,7 +47,7 @@ function selectCharacter(character){
     document.getElementById('Weight').value = character.weight;
     document.getElementById('Hobbies').value = character.hobbies;
     document.getElementById('Birthday').value = character.birthday;
-    document.getElementById('speed0Label').innerHTML = character.speed[0];
+    //document.getElementById('speed0Label').innerHTML = character.speed[0];
     document.getElementById('speed1Label').innerHTML = character.speed[1];
     document.getElementById('speed2Label').innerHTML = character.speed[2];
     document.getElementById('speed3Label').innerHTML = character.speed[3];
@@ -57,7 +57,7 @@ function selectCharacter(character){
     document.getElementById('speed7Label').innerHTML = character.speed[7];
     document.getElementById('speed8Label').innerHTML = character.speed[8];
     checkStartingTrait("Speed", character.startingSpeed);
-    document.getElementById('might0Label').innerHTML = character.might[0];
+    //document.getElementById('might0Label').innerHTML = character.might[0];
     document.getElementById('might1Label').innerHTML = character.might[1];
     document.getElementById('might2Label').innerHTML = character.might[2];
     document.getElementById('might3Label').innerHTML = character.might[3];
@@ -67,7 +67,7 @@ function selectCharacter(character){
     document.getElementById('might7Label').innerHTML = character.might[7];
     document.getElementById('might8Label').innerHTML = character.might[8];
     checkStartingTrait("Might", character.startingMight);
-    document.getElementById('sanity0Label').innerHTML = character.sanity[0];
+    //document.getElementById('sanity0Label').innerHTML = character.sanity[0];
     document.getElementById('sanity1Label').innerHTML = character.sanity[1];
     document.getElementById('sanity2Label').innerHTML = character.sanity[2];
     document.getElementById('sanity3Label').innerHTML = character.sanity[3];
@@ -77,7 +77,7 @@ function selectCharacter(character){
     document.getElementById('sanity7Label').innerHTML = character.sanity[7];
     document.getElementById('sanity8Label').innerHTML = character.sanity[8];
     checkStartingTrait("Sanity", character.startingSanity);
-    document.getElementById('knowledge0Label').innerHTML = character.knowledge[0];
+    //document.getElementById('knowledge0Label').innerHTML = character.knowledge[0];
     document.getElementById('knowledge1Label').innerHTML = character.knowledge[1];
     document.getElementById('knowledge2Label').innerHTML = character.knowledge[2];
     document.getElementById('knowledge3Label').innerHTML = character.knowledge[3];
